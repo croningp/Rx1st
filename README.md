@@ -10,7 +10,7 @@ git clone https://github.com/croningp/Rx1st
 2. Prepare Python environment and dependencies conda. We recommend using the [Miniforge] distribution.
 ```shell
 # Create and activate a conda environment with dependencies installed 
-conda create --file Rx1st/environment.yml
+conda env create --file Rx1st/environment.yml
 conda activate Rx1st
 # Install kernel for Rx1st environment in Jupyter
 python -m ipykernel install --user --name=Rx1st
@@ -22,7 +22,7 @@ git clone https://github.com/croningp/JTNN_VAE
 cd JTNN_VAE
 
 # Download JTNN_VAE dataset; on Unix
-wget "https://zenodo.org/record/4670997/files/jtnn_data.tar.xz?download=1"
+curl -o jtnn_data.tar.xz "https://zenodo.org/record/4670997/files/jtnn_data.tar.xz?download=1"
 # On Windows 10 using Powershell
 Invoke-WebRequest -Uri "https://zenodo.org/record/4670997/files/jtnn_data.tar.xz?download=1" -OutFile jttn_data.tar.xz
 
@@ -38,7 +38,7 @@ cd ..
 cd Rx1st
 
 # On Unix
-wget "https://zenodo.org/record/4670997/files/exploration_data.tar.xz?download=1"
+curl -o exploration_data.tar.xz "https://zenodo.org/record/4670997/files/exploration_data.tar.xz?download=1"
 # On Windows 10 using Powershell
 Invoke-WebRequest -Uri "https://zenodo.org/record/4670997/files/exploration_data.tar.xz?download=1" -OutFile exploration_data.tar.xz
 
@@ -46,7 +46,10 @@ Invoke-WebRequest -Uri "https://zenodo.org/record/4670997/files/exploration_data
 tar xvf exploration_data.tar.xz
 ```
 
-5. Launch Jupyter lab, where you can open the included 
+5. Launch Jupyter lab, where you can open the included `Exploration.ipynb` notebook.
+```shell
+jupyter lab
+```
 
 ## Reproducing manuscript figures
 The Jupyter notebook `Exploration.ipynb` contains the code to reproduce the figures in the manuscript linked below.

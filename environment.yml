@@ -8,11 +8,11 @@ dependencies:
   - numpy
   - pandas
   - seaborn
-  - tensorflow==2.4
+  - tensorflow==2.4.*
   - matplotlib
   - scikit-learn
   - jupyterlab
   - rdkit==2020.09.3
   - scipy
-  - pytorch==1.7
+  - pytorch==1.7.*
   - tqdm
