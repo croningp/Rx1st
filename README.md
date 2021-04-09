@@ -7,13 +7,10 @@ Reactivity first exploration of chemical space.
 git clone https://github.com/croningp/Rx1st
 ```
 
-2. Install dependencies using conda. We recommend using the [Miniforge] distribution.
+2. Prepare Python environment and dependencies conda. We recommend using the [Miniforge] distribution.
 ```shell
-# First, make sure both conda-forge and anaconda channels are enabled
-conda config --add channels conda-forge
-conda config --add channels anaconda
 # Create and activate a conda environment with dependencies installed 
-conda create -n Rx1st --file Rx1st/conda_list.txt
+conda create --file Rx1st/environment.yml
 conda activate Rx1st
 # Install kernel for Rx1st environment in Jupyter
 python -m ipykernel install --user --name=Rx1st
