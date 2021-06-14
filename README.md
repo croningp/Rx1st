@@ -7,7 +7,7 @@ Reactivity first exploration of chemical space.
 git clone https://github.com/croningp/Rx1st
 ```
 
-2. Prepare Python environment and dependencies conda. We recommend using the [Miniforge] distribution.
+2. Prepare Python environment and dependencies using conda. We recommend using the [Miniforge] distribution.
 ```shell
 # Create and activate a conda environment with dependencies installed 
 conda env create --file Rx1st/environment.yml
@@ -46,13 +46,14 @@ Invoke-WebRequest -Uri "https://zenodo.org/record/4670997/files/exploration_data
 tar xvf exploration_data.tar.xz
 ```
 
-5. Launch Jupyter lab, where you can open the included `Exploration.ipynb` notebook.
+5. Launch Jupyter lab, where you can open the included Jupyter notebooks (see below).
 ```shell
 jupyter lab
 ```
 
 ## Reproducing manuscript figures
-The Jupyter notebook `Exploration.ipynb` contains the code to reproduce the figures in the manuscript linked below.
+- The Jupyter notebook `Rx1st.ipynb` contains the code to reproduce the figures in the manuscript linked below.
+- `Novelty estimation.ipynb` and `Chemical space modelling.ipynb` contain the cheminformatic analysis the novelty and unpredictability of the trimer discovery, respectively.
 
 ## Publications
 - D. Caramelli, et al. _A Reactivity First Approach to Autonomous Discovery of New Chemistry_ ([preprint])
