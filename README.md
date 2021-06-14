@@ -13,7 +13,7 @@ git clone https://github.com/croningp/Rx1st
 # GPU
 conda env create --file Rx1st/environment-gpu.yml
 # or CPU
-conda env create --file Rx1st/environment-gpu.yml
+conda env create --file Rx1st/environment-cpu.yml
 
 conda activate Rx1st
 # Install kernel for Rx1st environment in Jupyter
