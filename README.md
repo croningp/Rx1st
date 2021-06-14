@@ -10,7 +10,11 @@ git clone https://github.com/croningp/Rx1st
 2. Prepare Python environment and dependencies using conda. We recommend using the [Miniforge] distribution.
 ```shell
 # Create and activate a conda environment with dependencies installed 
-conda env create --file Rx1st/environment.yml
+# GPU
+conda env create --file Rx1st/environment-gpu.yml
+# or CPU
+conda env create --file Rx1st/environment-gpu.yml
+
 conda activate Rx1st
 # Install kernel for Rx1st environment in Jupyter
 python -m ipykernel install --user --name=Rx1st
@@ -50,6 +54,11 @@ tar xvf exploration_data.tar.xz
 ```shell
 jupyter lab
 ```
+
+6. When opening a notebook make sure the correct kernel (Rx1st) is displayed at the top right corner of the Jupyter notebook as shown in the screenshot below. If not, click on the kernel name and select "Rx1st"
+from the kernel list.
+
+![Active kernel](kernel.png)
 
 ## Reproducing manuscript figures
 - The Jupyter notebook `Rx1st.ipynb` contains the code to reproduce the figures in the manuscript linked below.
